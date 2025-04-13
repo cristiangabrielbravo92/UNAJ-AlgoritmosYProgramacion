@@ -1,0 +1,6 @@
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\bin\Debug\Algoritmos y Programación.exe.config
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\bin\Debug\Algoritmos y Programación.exe
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\bin\Debug\Algoritmos y Programación.pdb
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\obj\Debug\Algoritmos y Programación.csprojResolveAssemblyReference.cache
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\obj\Debug\Algoritmos y Programación.exe
+C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Algoritmos y Programación\obj\Debug\Algoritmos y Programación.pdb
