@@ -1,6 +1,6 @@
 ﻿/*
  * Created by SharpDevelop.
- * User: antic
+ * User: Cristian Bravo
  * Date: 13/4/2025
  * Time: 19:48
  * 
@@ -40,10 +40,21 @@ namespace Ejercicios_de_Clases
 				Console.Write("Ingrese una palabra: ");
 				palabra = Console.ReadLine();
 				if (palabra != "") {
-					palabra = palabra.Trim();
-					// agrego la nueva palabra al arraylist
-					palabras.Add(palabra);		
-				} 
+					// cuenta todo lo ingresado como una sola palabra, debería ver si el caracter " " está en lo ingresado, separarlo con split y agregar uno por uno al array
+					if (palabra.IndexOf(" ") != -1) {
+						String [] partes = palabra.Split(new char [ ] {' '});
+						foreach(string parte in partes){
+							// agrego la nueva palabra al arraylist recortando los caracteres de sobra 
+							palabras.Add(parte.Trim());
+						}
+						
+					}
+					else
+					{
+					// agrego la nueva palabra al arraylist recortando los caracteres de sobra
+					palabras.Add(palabra.Trim());
+					}
+				}
 				else
 				{
 					Console.WriteLine("-------------------------------------------------------------------------------------------");
@@ -71,7 +82,7 @@ namespace Ejercicios_de_Clases
 			porcentajeEmpiezaEnS = (cantidadEmpiezanEnS * 100) / palabras.Count;
 			// saco promedio con división
 			promedioCaracteres = cantidadCaracteres / palabras.Count;
-			Console.WriteLine("Porcentaje de palabras que empiezan en 's': {0} | Promedio de caracteres: {1} ", porcentajeEmpiezaEnS, promedioCaracteres);
+			Console.WriteLine("Porcentaje de palabras que empiezan en 's': {0}% | Promedio de caracteres: {1} ", porcentajeEmpiezaEnS, promedioCaracteres);
 			Console.WriteLine("-------------------------------------------------------------------------------------------");
 			Console.WriteLine("");
 			
