@@ -4,3 +4,9 @@ C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Alg
 C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Practica1\bin\Debug\Practica1.pdb
 C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Practica1\obj\Debug\Practica1.exe
 C:\Users\antic\OneDrive - SOSCV\Documents\SharpDevelop Projects\UNAJAlgyProg\Algoritmos y Programación\Practica1\obj\Debug\Practica1.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\bin\Debug\Practica1.exe.config
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\bin\Debug\Practica1.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\bin\Debug\Practica1.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\obj\Debug\Practica1.csprojResolveAssemblyReference.cache
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\obj\Debug\Practica1.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica1\obj\Debug\Practica1.pdb

@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmos y Programación"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica1", "Practica1\Practica1.csproj", "{0C2F96C3-79AE-4AF4-BC0A-1C56D7681781}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicios de Clases", "Ejercicios de Clases\Ejercicios de Clases.csproj", "{95B0214F-6FFD-474C-8F30-353CF836A40E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,5 +22,9 @@ Global
 		{0C2F96C3-79AE-4AF4-BC0A-1C56D7681781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C2F96C3-79AE-4AF4-BC0A-1C56D7681781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C2F96C3-79AE-4AF4-BC0A-1C56D7681781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B0214F-6FFD-474C-8F30-353CF836A40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B0214F-6FFD-474C-8F30-353CF836A40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B0214F-6FFD-474C-8F30-353CF836A40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B0214F-6FFD-474C-8F30-353CF836A40E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

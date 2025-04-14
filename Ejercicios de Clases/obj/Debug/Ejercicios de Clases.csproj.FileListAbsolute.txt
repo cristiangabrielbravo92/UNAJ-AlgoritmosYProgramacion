@@ -1,0 +1,6 @@
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\bin\Debug\Ejercicios de Clases.exe.config
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\bin\Debug\Ejercicios de Clases.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\bin\Debug\Ejercicios de Clases.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\obj\Debug\Ejercicios de Clases.csprojResolveAssemblyReference.cache
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\obj\Debug\Ejercicios de Clases.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Ejercicios de Clases\obj\Debug\Ejercicios de Clases.pdb
