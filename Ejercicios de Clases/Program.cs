@@ -26,6 +26,7 @@ namespace Ejercicios_de_Clases
 			- Recordar que no se sabe cuántas palabras ingresará el usuario.
 			- Ayuda: palabra != “” o palabra == “”.
 			*/
+			/*
 			ArrayList palabras = new ArrayList();
 			String palabra = "-";
 			//inicializo palabra con un dato para que ingrese al primer bloque Verdadero (no hago do while porque usaría un if innecesario dentro de cada ciclo)
@@ -85,6 +86,17 @@ namespace Ejercicios_de_Clases
 			Console.WriteLine("Porcentaje de palabras que empiezan en 's': {0}% | Promedio de caracteres: {1} ", porcentajeEmpiezaEnS, promedioCaracteres);
 			Console.WriteLine("-------------------------------------------------------------------------------------------");
 			Console.WriteLine("");
+			*/
+			
+			// ejercicio class alumno
+			/* 
+			 Clase alumno: nombre, apellido, dni, legajo, nota
+			 Clase curso: nombre, lista alumnos 
+			 La clase curso debe incluir los 6 métodos de agregar, eliminar, ver en posición, ver si existe, etc
+			 Imprimir nombre y apellido de los alumnos que tienen nota mayor al promedio
+			 evitar uso de listas, usar acumuladores y contadores
+			*/
+			
 			
 			
 			Console.Write("Presione una tecla para salir. . . ");

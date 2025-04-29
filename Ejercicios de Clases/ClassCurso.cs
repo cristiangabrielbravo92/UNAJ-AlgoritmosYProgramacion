@@ -17,6 +17,7 @@ namespace Ejercicios_de_Clases
 	{
 		public ClassCurso()
 		{
+			private 
 		}
 	}
 }
