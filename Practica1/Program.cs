@@ -114,6 +114,9 @@ namespace Practica1
 					break;
 			}
 			*/
+			
+			//Ejercicio 5
+			/*
 			string numeroIngresado;
 			decimal numero, maximo, minimo, suma, promedio;
 			int contador;
@@ -146,11 +149,72 @@ namespace Practica1
 			else {
 				Console.WriteLine("No se ingresaron numeros para calcular máximo, mínimo ni promedio.");
 			}
-
+			*/
+			
+			
+			//Ejercicio 6
+			// Lo puse como función para practicar
+			/*
+			ejercicio6();
+			*/
+			
+			//Ejercicio 7
+			// Lo puse como función para practicar
+			Console.WriteLine(ejercicio7());
+			
+			
 			
 			
 			Console.Write("Presione una tecla para salir . . . ");
 			Console.ReadKey(true);
+			
+			
+			
 		}
+		
+		static void ejercicio6(){
+			for (int i = 40; i < 353; i++) {
+				if (i % 2 != 0 && i % 3 == 0) {
+					Console.WriteLine(i);
+				}
+			}
+			
+		}
+		
+		
+		static string ejercicio7() {
+		 /*	Implemente un programa de aplicación que permita al usuario ingresar por consola una sucesión de números que finaliza con un 0. 
+  			Informar al final del proceso cuál es la cantidad total de números ingresados y el porcentaje de números mayores a 10 de la sucesión. */
+		 string resultado = "";
+		 int cantidadNumeros = 0;
+		 int cantidadMayoresA10 = 0;
+		 int numero;
+		 double porcentajeMayoresA10 = 0;
+		 Console.WriteLine("---------------------------------------------------");
+		 Console.WriteLine("Ingrese una secuencia de numeros para calcular la \ncantidad total de números ingresados y el porcentaje de números mayores a 10");
+		 Console.WriteLine("---------------------------------------------------");
+		 do {
+		 	Console.Write("Ingrese un número y luego enter. Para finalizar ingrese 0: ");
+		 	numero = int.Parse(Console.ReadLine());
+		 	cantidadNumeros++;
+		 	if (numero > 10) {
+		 		cantidadMayoresA10++;
+		 	}
+		 
+		 }
+		 while (numero != 0);
+		 porcentajeMayoresA10 = 100*cantidadMayoresA10/cantidadNumeros;
+		 
+		 resultado = "Cantidad total de números ingresados: " + cantidadNumeros + "\nPorcentaje de numeros mayores a 10: " + porcentajeMayoresA10 + "%";
+
+		 return resultado;
+		}
+	
+		
 	}
+	
+	
+	
 }
+
+
