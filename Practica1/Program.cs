@@ -55,9 +55,101 @@ namespace Practica1
 			}
 			*/
 			
+			// Ejercicio 3
+			/*
+			double nro1, nro2, resultado;
+			Console.WriteLine("--- Ingrese dos números para calcular su suma ---");
+			Console.Write("Ingrese el primer número: ");
+			nro1 = double.Parse(Console.ReadLine());
+			Console.Write("Ingrese el segundo número: ");
+			nro2 = double.Parse(Console.ReadLine());
+			resultado = nro1 + nro2;
+			Console.WriteLine("Suma {0}", resultado);
+			*/
+			
+			// Ejercicio 4
+			/*
+			byte mes;
+			Console.Write("Ingrese el número de un mes para ver su nombre: ");
+			mes = byte.Parse(Console.ReadLine());
+			switch (mes) {
+				case 1: 
+					Console.WriteLine("Enero");
+					break;
+				case 2: 
+					Console.WriteLine("Febrero");
+					break;
+				case 3: 
+					Console.WriteLine("Marzo");
+					break; 
+				case 4: 
+					Console.WriteLine("Abril");
+					break;
+				case 5: 
+					Console.WriteLine("Mayo");
+					break;
+				case 6: 
+					Console.WriteLine("Junio");
+					break;
+				case 7: 
+					Console.WriteLine("Julio");
+					break;
+				case 8: 
+					Console.WriteLine("Agosto");
+					break;
+				case 9: 
+					Console.WriteLine("Septiembre");
+					break;
+				case 10: 
+					Console.WriteLine("Octubre");
+					break;
+				case 11: 
+					Console.WriteLine("Noviembre");
+					break;
+				case 12: 
+					Console.WriteLine("Diciembre");
+					break;
+				default:  
+					Console.WriteLine("Mes invalido");
+					break;
+			}
+			*/
+			string numeroIngresado;
+			decimal numero, maximo, minimo, suma, promedio;
+			int contador;
+			Console.WriteLine("----------------------------------------------");
+			Console.WriteLine("Ingrese una secuencia de números para calcular: \n -el máximo \n -el mínimo \n -el promedio \n -para terminar no ingrese nada");
+			Console.WriteLine("----------------------------------------------");
+			
+			Console.Write("Ingrese un número o nada y luego presione Enter: ");
+			numeroIngresado = Console.ReadLine();
+			// En este if me fijo primero si aunque sea ingresaron algo para enviar un mensaje en caso de que no hayan ingresado nada
+			if (numeroIngresado != "") {
+				//después convierto el primer número ingresado en el máximo y el mínimo por si solamente ingresan un número
+				maximo = decimal.Parse(numeroIngresado);
+				minimo = decimal.Parse(numeroIngresado);
+				contador = 0;
+				suma = 0;
+				while (numeroIngresado != "") {
+					numero = decimal.Parse(numeroIngresado);
+					if (numero < minimo) minimo = numero;
+					if (numero > maximo) maximo = numero;
+					contador++;
+					suma += numero;
+					Console.Write("Ingrese un número o nada y luego presione Enter: ");
+					numeroIngresado = Console.ReadLine();
+				}
+				promedio = suma / contador;
+				Console.WriteLine("Maximo: {0} \nMinimo: {1} \nPromedio: {2}", maximo, minimo, promedio);
+				
+			}
+			else {
+				Console.WriteLine("No se ingresaron numeros para calcular máximo, mínimo ni promedio.");
+			}
+
 			
 			
-			Console.Write("Press any key to continue . . . ");
+			Console.Write("Presione una tecla para salir . . . ");
 			Console.ReadKey(true);
 		}
 	}

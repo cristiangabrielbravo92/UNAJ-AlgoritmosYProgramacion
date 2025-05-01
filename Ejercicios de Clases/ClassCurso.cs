@@ -6,6 +6,7 @@
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
+ /*
 using System;
 
 namespace Ejercicios_de_Clases
@@ -21,3 +22,4 @@ namespace Ejercicios_de_Clases
 		}
 	}
 }
+*/
