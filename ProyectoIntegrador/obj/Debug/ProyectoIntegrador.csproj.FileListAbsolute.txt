@@ -1,0 +1,6 @@
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\bin\Debug\ProyectoIntegrador.exe.config
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\bin\Debug\ProyectoIntegrador.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\bin\Debug\ProyectoIntegrador.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
