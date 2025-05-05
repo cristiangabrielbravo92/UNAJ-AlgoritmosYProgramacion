@@ -13,9 +13,7 @@ namespace Practica4
 	/// <summary>
 	/// Description of Persona.
 	/// </summary>
-	public class Persona
-	{
-		// Ejercicio 2
+	// Ejercicio 2
 		/* Defina la clase Persona con 3 campos: Nombre, Edad y DNI. En el constructor utilice parámetros cuyos
 		 * nombres coincidan con las variables de instancia del objeto (usar this). Definir un método que permita
 		 * imprimir los datos de la persona con el siguiente formato: Nombre (Edad) <TAB> DNI.
@@ -26,7 +24,14 @@ namespace Practica4
 		 * constructor que reciba como parámetro el nombre, la fecha de nacimiento (un DateTime) y el dni. En base a
 		 * la fecha de nacimiento y la fecha actual debe calcular y guardar la edad. */		
 		
-		//Variables
+		// Ejercicio 4
+		/* Agregue a la clase Persona un método esMayorQue(Persona p) que devuelva verdadero si la persona
+		 * que recibe el mensaje es más grande que la persona recibida como parámetro. Utilícelo para realizar un
+		 * programa de aplicación (Main) que al recibir los datos de 2 personas imprima el nombre y el dni del
+		 * menor. */
+	
+	public class Persona
+	{	// ----- Variables -----
 		// Ejercicio 2
 		private string nombre;
 		private int edad;
@@ -34,15 +39,17 @@ namespace Practica4
 		// Ejercicio 3
 		private DateTime fechaNacimiento;
 		
-		//Constructores
+		// ----- Constructores -----
 		public Persona()
 		{
 		}
+		// Ejercicio 2
 		public Persona(string nombre, int edad, int dni) {
 			this.nombre = nombre;
 			this.edad = edad;
 			this.dni = dni;
 		}
+		// Ejercicio 3
 		public Persona(string nombre, DateTime fechaNacimiento, int dni) {
 			this.nombre = nombre;
 			this.fechaNacimiento = fechaNacimiento;
@@ -59,7 +66,8 @@ namespace Practica4
 			
 		}
 		
-		//Propiedades (recordar escribirlas igual que la variable pero con la primera letra en mayúscula)
+		// ----- Propiedades -----
+		// (recordar escribirlas igual que la variable pero con la primera letra en mayúscula)
 		public string Nombre {
 			set {nombre = value;}
 			get {return nombre;}
@@ -77,10 +85,21 @@ namespace Practica4
 			get {return FechaNacimiento;}
 		}
 		
-		//Métodos
+		// ----- Métodos -----
+		// Ejercicio 2
 		public void imprimir() {
 			Console.WriteLine("{0} ({1})	{2}", nombre, edad, dni);
 		}
+		
+		// Ejercicio 4
+		public bool esMayorQue(Persona p) {
+			if (edad > p.Edad) {
+				return true;
+			} else {
+			return false;
+			}
+		} 
+		
 		
 	}
 }

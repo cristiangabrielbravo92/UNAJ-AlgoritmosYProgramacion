@@ -13,16 +13,18 @@ namespace Practica4
 	/// <summary>
 	/// Guarda la hora separando horas, minutos y segundos en tres variables diferentes
 	/// </summary>
-	public class Hora
-	{
-			/* Codifique la clase Hora de tal forma que al ejecutar las siguientes sentencias
+	/* Codifique la clase Hora de tal forma que al ejecutar las siguientes sentencias
 			 * Hora h=new Hora(23,30,15);
 			 * h.imprimir();
 			 * se imprima por consola: 23 HORAS, 30 MINUTOS Y 15 SEGUNDOS */
+	
+	public class Hora
+	{		// ----- Variables -----
 			private byte hora;
 			private byte minutos;
 			private byte segundos;
 			
+			// ----- Constructores -----
 			public Hora() {
 			}
 			
@@ -32,6 +34,7 @@ namespace Practica4
 				this.segundos = segundos;
 			}
 			
+			// ----- Métodos -----
 			public void imprimir(){
 				Console.WriteLine("{0} HORAS, {1} MINUTOS Y {2} SEGUNDOS", hora, minutos, segundos);
 			}
