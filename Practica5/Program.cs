@@ -34,7 +34,7 @@ namespace Practica5
 			Chavo.agregarMateria(martesOchoDiez);
 			Chavo.agregarMateria(martesDiezDoce);
 			Chavo.agregarMateria(miercolesOchoDoceGDR);
-			Chavo.agregarMateria(miercolesOchoDoce);
+			//Chavo.agregarMateria(miercolesOchoDoce);
 			alumnos.Add(Chavo);
 			// acá me queda pendiente armar una función cíclica con while para ingresar alumnos
 			Alumno Chilindrina = new Alumno("Chilindrina Valdés", 123457,2);
@@ -58,15 +58,119 @@ namespace Practica5
 			Alumno Popis = new Alumno("Popis SinApellido",123461,6);
 			alumnos.Add(Popis);
 			
-			Chavo.verMaterias();
-			Chilindrina.verHorariosyMaterias();
-			Popis.verMaterias();
+			//Chavo.verMaterias();
+			//Chilindrina.verHorariosyMaterias();
+			//Popis.verMaterias();
+			//Console.WriteLine(Chavo.verCuantasMateriasCursa());
+			
+			string opcion = "-";
+			Console.WriteLine("-------------------------------------------------------------");
+			mostrarMenu();
+			Console.Write("Ingrese el número de la operación que desea realizar: ");
+			opcion = Console.ReadLine();
+			while (opcion != "0") {
+				string nombreAlumno, nombreMateria, diaMateria, horarioMateria;
+				switch (opcion) {
+						case "1": 
+								Console.Write("Ingrese el nombre de la materia: ");
+								nombreMateria = Console.ReadLine();
+								// acá me falta ver de hacer un arraylist que tenga todas las materias para no duplicarlas
+								// y recién después de ver que no existe la materia pedir los siguientes datos e instanciarla								
+								Console.Write("Ingrese el dia que se da la materia: ");
+								diaMateria = Console.ReadLine();
+								Console.Write("Ingrese el horario de la materia: ");
+								horarioMateria = Console.ReadLine();
+								Horario materia = new Horario(diaMateria, horarioMateria, nombreMateria);
+								// primero pido el nombre del alumno y veo en el arraylist de alumnos si existe, si existe le agrego el horario
+								// sino, primero se instancia el alumno y después se le agrega el horario
+								bool existeAlumno = false;
+								Console.Write("Ingrese el nombre y apellido del alumno: ");
+								nombreAlumno = Console.ReadLine();
+								foreach (Alumno e in alumnos) {
+									if (e.NombreApellido == nombreAlumno) {
+										existeAlumno = true;
+										e.agregarMateria(materia);
+										// alternativamente puedo usar el método que ingresa directamente los datos
+										// e.agregarMateria(diaMateria, horarioMateria, nombreMateria)
+										break;
+									}
+								}
+								if (!existeAlumno) {
+									Console.Write("Ingrese el DNI del alumno: ");
+									int dniAlumno = int.Parse(Console.ReadLine());
+									Console.Write("Ingrese el legajo del alumno: ");
+									int legajoAlumno = int.Parse(Console.ReadLine());
+									Alumno nuevoAlumno = new Alumno(nombreAlumno, dniAlumno, legajoAlumno);
+									alumnos.Add(nuevoAlumno);
+									nuevoAlumno.agregarMateria(materia);
+								}
+							Console.WriteLine("-------------------------------------------------------------");
+							break;
+						case "2": 
+							Console.Write("Ingrese el nombre de la materia: ");
+							nombreMateria = Console.ReadLine().ToLower();
+							bool alumnosEncontrados = false;
+							foreach (Alumno e in alumnos) {
+								// uso el método materiasQueCursa() para tener una lista de materias sin repeticiones por cada alumno y que no se impriman alumnos repetidos
+								foreach (string m in e.materiasQueCursa()) {
+									if (m.ToLower() == nombreMateria) {
+										// me queda pendiente corregir que solo la primera vez que encuentra un alumno para esa materia se cambie alumnosEncontrados a true
+										alumnosEncontrados = true;
+										Console.Write(" - {0} \n", e.NombreApellido);
+									}
+								}
+							}
+							if (!alumnosEncontrados) {
+								Console.WriteLine("No se encontró ningún alumno inscripto en esa materia o no existe esa materia");
+							}
+							Console.WriteLine("-------------------------------------------------------------");
+							break;
+						case "3": 
+							Console.Write("Ingrese el nombre del alumno: "); 
+							nombreAlumno = Console.ReadLine().ToLower();
+							bool alumnoEncontrado = false;
+							foreach (Alumno e in alumnos) {
+								if (e.NombreApellido.ToLower() == nombreAlumno) {
+									alumnoEncontrado = true;
+									Console.WriteLine("{0} cursa {1} materias", nombreAlumno,e.cuantasMateriasCursa());
+								}
+							}
+							if (!alumnoEncontrado) {
+								Console.WriteLine("No se encontró ningún alumno con ese nombre y apellido");
+							}
+							Console.WriteLine("-------------------------------------------------------------");
+							break;
+						case "4":
+							foreach (Alumno e in alumnos) {
+								Console.Write(" - {0}\n",e.NombreApellido);
+							}
+							Console.WriteLine("-------------------------------------------------------------");
+							break;
+						default: 
+							Console.WriteLine("No existe la opción ingresada");
+							Console.WriteLine("-------------------------------------------------------------");
+							break;								
+				}
+				mostrarMenu();
+				Console.Write("Ingrese el número de la operación que desea realizar: ");
+				opcion = Console.ReadLine();
+			}
+			
 			
 			
 			Console.Write("Presione una tecla para salir . . . ");
 			Console.ReadKey(true);
 		}
 		// acá van las funciones
+		static void mostrarMenu() {
+			Console.WriteLine("------- Menú de Alumnos -------");
+			Console.WriteLine(" 1- Inscribir un alumno en una materia");
+			Console.WriteLine(" 2- Imprimir alumnos inscriptos en una materia");
+			Console.WriteLine(" 3- Informar cuantas materias cursa un alumno");
+			Console.WriteLine(" 4- Imprimir Lista de todos los alumnos");
+			Console.WriteLine(" 0- Salir");
+		}
+		
 		
 	}
 }

@@ -20,7 +20,6 @@ namespace Practica5
 		private int dni, legajo;
 		private ArrayList horarios; 
 		
-		
 		// ----- Constructores -----		
 		public Alumno()
 		{
@@ -124,7 +123,28 @@ namespace Practica5
 			}
 		}
 		
+		public int cuantasMateriasCursa() {
+			ArrayList materias = new ArrayList();
+			foreach (Horario e in horarios) {
+				if (!materias.Contains(e.Materia)) {
+					materias.Add(e.Materia);
+				}
+			}
+			//int cantidadMaterias = materias.Count;
+			//return cantidadMaterias;
+			return materias.Count;
+		}
 		
+		public ArrayList materiasQueCursa() {
+			// creo una lista de materias (sin repeticiones) para usar en la opción 2 del menú
+			ArrayList materias = new ArrayList();
+			foreach (Horario e in horarios) {
+				if (!materias.Contains(e.Materia)) {
+					materias.Add(e.Materia);
+				}
+			}
+			return materias;
+		}
 		
 		
 	}
