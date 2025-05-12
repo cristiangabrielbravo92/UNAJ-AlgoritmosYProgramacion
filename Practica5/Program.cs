@@ -22,6 +22,7 @@ namespace Practica5
 			// Ejercicio 2
 			// Ver enunciado en archivo Practica 5.pdf dentro del root del repositorio
 			// Ver código en archivo Alumno.cs
+			/*
 			Horario lunesOchoDoce = new Horario("Lunes", "8 a 12", "Masterclass de Don Ramón");
 			Horario martesOchoDiez = new Horario("Martes", "8 a 10", "Geometría");
 			Horario martesDiezDoce = new Horario("Martes", "10 a 12", "Geografía");
@@ -65,7 +66,7 @@ namespace Practica5
 			
 			string opcion = "-";
 			Console.WriteLine("-------------------------------------------------------------");
-			mostrarMenu();
+			mostrarMenuAlumnos();
 			Console.Write("Ingrese el número de la operación que desea realizar: ");
 			opcion = Console.ReadLine();
 			while (opcion != "0") {
@@ -151,10 +152,16 @@ namespace Practica5
 							Console.WriteLine("-------------------------------------------------------------");
 							break;								
 				}
-				mostrarMenu();
+				mostrarMenuAlumnos();
 				Console.Write("Ingrese el número de la operación que desea realizar: ");
 				opcion = Console.ReadLine();
 			}
+			*/
+			
+			
+			
+			// Ejercicio 4
+			
 			
 			
 			
@@ -162,7 +169,7 @@ namespace Practica5
 			Console.ReadKey(true);
 		}
 		// acá van las funciones
-		static void mostrarMenu() {
+		static void mostrarMenuAlumnos() {
 			Console.WriteLine("------- Menú de Alumnos -------");
 			Console.WriteLine(" 1- Inscribir un alumno en una materia");
 			Console.WriteLine(" 2- Imprimir alumnos inscriptos en una materia");

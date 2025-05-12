@@ -1,0 +1,5 @@
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica6\bin\Debug\Practica6.exe.config
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica6\bin\Debug\Practica6.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica6\bin\Debug\Practica6.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica6\obj\Debug\Practica6.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Practica6\obj\Debug\Practica6.pdb
