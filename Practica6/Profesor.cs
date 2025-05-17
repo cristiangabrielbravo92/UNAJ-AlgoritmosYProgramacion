@@ -35,6 +35,8 @@ namespace Practica6
 			this.cupoDisponible = cupoDisponible;
 		}
 		
+		
+		
 		// ----- Propiedades -----
 		public int CupoDisponible {
 			//set {}
@@ -42,14 +44,44 @@ namespace Practica6
 		}
 		
 		
+		
 		// ----- Métodos -----
+		
+		// métodos básicos para listas
 		public void altaAlumno(Alumno e){
 			alumnos.Add(e);
 			cupoDisponible -= 1; }
 		
+		public void eliminarAlumno(Alumno alumno) {
+			alumnos.Remove(alumno);
+		}
+		
+		public void eliminarAlumnoPos(int posicion) {
+			alumnos.RemoveAt(posicion-1);
+		}
+		
+		
 		public int cantidadAlumnos() {
 			return alumnos.Count;
 		}
+		
+		public Alumno recuperarAlumnoPos(int posicion) {
+			return (Alumno) alumnos[posicion-1];
+		}
+		
+		public bool existeAlumno(Alumno alumno) {
+			return alumnos.Contains(alumno);
+		}
+		
+		public ArrayList retornarAlumnos() {
+			return alumnos;
+		}
+		
+		
+		
+		
+		
+		//métodos específicos
 		
 		public double porcentajePromedioMayor8() {
 			//double porcentajePromMayor8 = 0;
@@ -71,6 +103,8 @@ namespace Practica6
 			return ((double)cantidadPromMayor8 / alumnos.Count)*100;
 			}
 		}
+		
+		
 		
 		
 	}

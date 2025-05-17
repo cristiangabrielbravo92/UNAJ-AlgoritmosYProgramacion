@@ -28,11 +28,14 @@ namespace Practica6
 			 * alumnos (con un while). Al final el proceso imprimir cuántos alumnos no pudieron inscribirse
 			 * por falta de cupo y el porcentaje de alumnos de ese coordinador con promedio mayor a 8. */
 			int noInscriptos = 0;
-			Coordinador coordinador = new Coordinador("Ingeniería", "Algoritmos y Programación", 3);
+			Coordinador coordinador = new Coordinador("Ingeniería", "Algoritmos y Programación", 4);
 			string continuar = "s";
+			Alumno nuevoAlumno;
 			Console.WriteLine("   ----- Alta de alumno ----- ");
 			while (continuar != "n") {
-				Alumno nuevoAlumno = solicitarDatosYCrearAlumno();
+				// saco la declaración afuera para poder usarla en la prueba de los métodos de coordinador al final
+				//Alumno nuevoAlumno = solicitarDatosYCrearAlumno();
+				nuevoAlumno = solicitarDatosYCrearAlumno();
 				if (coordinador.CupoDisponible > 0) {
 					coordinador.altaAlumno(nuevoAlumno);
 					Console.WriteLine("Alumno dado de alta correctamente");
@@ -49,12 +52,33 @@ namespace Practica6
 				if (continuar == "s") {
 					Console.WriteLine("   ----- Alta de alumno ----- ");
 				}
+				// el siguiente bloque if lo hice para probar los métodos de listas de la clase profesor
+				/* if (continuar == "n") {
+					Console.WriteLine(coordinador.retornarAlumnos());
+					Console.WriteLine(coordinador.cantidadAlumnos());
+					// esta es la razón por la que saqué la declaración del alumno de la línea 38 a la línea 33
+					Console.WriteLine(coordinador.existeAlumno(nuevoAlumno));
+					coordinador.eliminarAlumno(nuevoAlumno);
+					
+					Console.WriteLine(coordinador.retornarAlumnos());
+					Console.WriteLine(coordinador.cantidadAlumnos());
+					
+					coordinador.altaAlumno(nuevoAlumno);
+					Console.WriteLine(coordinador.existeAlumno(nuevoAlumno));
+					coordinador.eliminarAlumnoPos(4);
+					
+					Console.WriteLine(coordinador.retornarAlumnos());
+					Console.WriteLine(coordinador.cantidadAlumnos());
+					coordinador.recuperarAlumnoPos(3).imprimirDatos();
+				} */
 				
 			}
 			Console.WriteLine("Cantidad de alumnos que no pudieron ser inscriptos: {0}", noInscriptos);
 			Console.WriteLine("Porcentaje de alumnos con promedio mayor a 8: {0}", coordinador.porcentajePromedioMayor8());
 			
-			
+
+						
+			                  
 			
 			Console.Write("Presione alguna tecla para salir . . . ");
 			Console.ReadKey(true);
