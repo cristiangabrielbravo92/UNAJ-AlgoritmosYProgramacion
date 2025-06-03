@@ -22,7 +22,7 @@ namespace Practica5
 			// Ejercicio 2
 			// Ver enunciado en archivo Practica 5.pdf dentro del root del repositorio
 			// Ver código en archivo Alumno.cs
-			/*
+			
 			Horario lunesOchoDoce = new Horario("Lunes", "8 a 12", "Masterclass de Don Ramón");
 			Horario martesOchoDiez = new Horario("Martes", "8 a 10", "Geometría");
 			Horario martesDiezDoce = new Horario("Martes", "10 a 12", "Geografía");
@@ -156,7 +156,7 @@ namespace Practica5
 				Console.Write("Ingrese el número de la operación que desea realizar: ");
 				opcion = Console.ReadLine();
 			}
-			*/
+			
 			
 			
 			

@@ -1,0 +1,6 @@
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\obj\Debug\Parcial 1.csprojResolveAssemblyReference.cache
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\bin\Debug\Parcial 1.exe.config
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\bin\Debug\Parcial 1.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\bin\Debug\Parcial 1.pdb
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\obj\Debug\Parcial 1.exe
+C:\Users\antic\OneDrive\UNAJ\Algoritmos y Programación\Código\UNAJ-AlgoritmosYProgramacion\Parcial 1\obj\Debug\Parcial 1.pdb
